@@ -1,0 +1,83 @@
+/* Reseta o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo da página */
+body {
+    background: linear-gradient(to bottom, #4b4545, #66a3e9); /* Gradiente de preto para azul */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Container da calculadora */
+.calculadora {
+    width: 300px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Display da calculadora */
+.display {
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Teclado da calculadora */
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Botões da calculadora */
+.botao {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Cor dos botões */
+.botao {
+    background-color: #4acbe2;
+    color: #fff;
+}
+
+.botao.operador {
+    background-color: #ff6f61;
+}
+
+.botao.limpar {
+    grid-column: span 4;
+    background-color: #d9534f;
+}
+
+/* Efeitos ao clicar nos botões */
+.botao:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.botao:active {
+    transform: scale(0.95);
+}
